@@ -25,7 +25,7 @@
 
 body {
 	width: 1700px;
-	border: 1px solid #000000;
+	/* border: 1px solid #000000; */
 	margin: 0 auto;
 	background: #ffffff;
 }
@@ -217,19 +217,23 @@ body {
 	padding-top: 23px;
 }
 .description-organization {
+	display: flex;
+	flex-direction: row;
 	padding-top: 72px;
 }
 .description-organization .background-foto {
-	float: left;;
-	margin-right: 75px;
 	width: 50%;
+	background-image: url(images/foto2.jpg);
+    background-repeat: no-repeat;
 
 }
 .description-organization .description {
 	background-color: #ffc155;
-	padding: 121px 265px 211px 0;
+	padding: 121px 265px 206px 79px;
 	display: block;
 	color: #ffffff;
+	flex: 1;
+	height: 296px;
 }
 .description-organization .description .title {
 	font-size: 30px;
@@ -296,7 +300,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     border-bottom: 30px solid #e7edf3;
-    border-top: 30px solid #e7edf3; 
+	border-top: 30px solid #e7edf3; 
+	border-right: 1px solid #e7edf3;
     
     
 }
@@ -376,5 +381,19 @@ body {
 	padding-top: 9px;
 }
 .path-of-action {
-	padding: 62px 265px 52px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 62px 0 52px;
+	height: 127px;
+}
+.path-of-action .icon {
+	align-self: center;
+}
+.path-of-action .arrow {
+	align-self: flex-start;
+}
+.path-of-action .inverted-arrow {
+	align-self: flex-end;
+	transform: rotate(180deg);
 }
