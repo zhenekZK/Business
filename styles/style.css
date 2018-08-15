@@ -380,14 +380,14 @@ body {
 	color: #394b50;
 	padding-top: 9px;
 }
-.path-of-action {
+/* .path-of-action {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 62px 0 52px;
 	height: 127px;
-}
-.path-of-action .icon {
+} */
+/* .path-of-action .icon {
 	align-self: center;
 }
 .path-of-action .arrow {
@@ -396,4 +396,49 @@ body {
 .path-of-action .inverted-arrow {
 	align-self: flex-end;
 	transform: rotate(180deg);
+} */
+
+.path-of-action {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 92px;
+	position: relative;
+}
+.path-of-action .arrow-first {
+	position: absolute;
+	left: 18%;
+	top: 15%;
+}
+.path-of-action .arrow-second {
+	position: absolute;
+	right: 18%;
+	top: 15%;
+}
+.path-of-action .arrow-inverted {
+	position: absolute;
+	transform: rotate(180deg);
+	left: 44%;
+	bottom: 45%;
+}
+.path-of-action .step-by-step {
+	margin-right: 80px;
+
+}
+.path-of-action .step-by-step:last-of-type {
+	margin-right: 0;
+}
+.path-of-action .step-by-step .description-step {
+	margin-top: 90px;
+}
+.start-button {
+	display: inline-block;
+	padding-top: 92px;
+}
+.start-button .link {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 17px 23px;
+	color: #ffffff;
+	background: #e7ad48;
 }
