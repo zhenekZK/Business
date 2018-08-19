@@ -6,6 +6,7 @@
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'Gotham Pro';
     src: url('../fonts/GothamPro-Black.woff2') format('woff2'),
@@ -33,7 +34,7 @@ body {
 
 .header {
    	padding: 0 265px;
-   	height: 95px;  
+   	height: 95px;
    	display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +84,7 @@ body {
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 900;
-   
+
 }
 .banner .banner-text .text {
 	font-size: 18px;
@@ -224,7 +225,7 @@ body {
 }
 .description-organization .background-foto {
 	width: 50%;
-    background-image: url(../images/foto2.jpg);  
+    background-image: url(../images/foto2.jpg);
     background-repeat: no-repeat;
 
 }
@@ -285,7 +286,7 @@ body {
 	line-height: 22px;
 	color: #394b50;
 	padding-top: 9px;
-	
+
 }
 .price-list {
     display: flex;
@@ -301,15 +302,15 @@ body {
     text-align: center;
     text-transform: uppercase;
     border-bottom: 30px solid #e7edf3;
-	border-top: 30px solid #e7edf3; 
+	border-top: 30px solid #e7edf3;
 	border-right: 1px solid #e7edf3;
-    
-    
+
+
 }
-.price-item:hover .title-plan .title, 
+.price-item:hover .title-plan .title,
 .price-item:hover .title-plan .price,
 .price-item:hover .title-plan .limit  {
-	color: #ffffff;	
+	color: #ffffff;
 }
 .price-item:hover {
 	background: #709dca;
@@ -336,7 +337,7 @@ body {
 	line-height: 22px;
 	color: #818b95;
 	padding: 12px 0 33px;
-	
+
 }
 .price-item .propose-term {
 	padding-bottom: 24px;
@@ -350,7 +351,7 @@ body {
 }
  .price-item .get-continue {
 	display: inline-block;
-    
+
 }
 .price-item  .get-continue .link {
 	background: #ffbb42;
@@ -502,7 +503,7 @@ body {
 .block-reviews .review .foto-client {
 	border-radius: 65px;
 	padding-right: 15px;
-} 
+}
 
 .block-reviews .review .description-review .text {
 	font-family: "OpenSans", sans-serif;
@@ -612,7 +613,7 @@ body {
 }
 .contacts .map .logo-place {
 	display: block;
-	padding-top: 43px; 
+	padding-top: 43px;
 }
 .contacts .map .logo-place .logo {
 	display: block;
@@ -736,7 +737,7 @@ body {
 	width: 25px;
 	height: 25px;
 	display: inline-block;
-	
+
 	background-repeat: no-repeat;
 }
 .contacts .social-network .linkedin:hover {
@@ -754,9 +755,6 @@ body {
 	font-family: "OpenSans", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-
-
-
 }
 .start-button {
 	display: inline-block;
