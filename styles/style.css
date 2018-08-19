@@ -75,18 +75,18 @@ body {
 	background: #709dca;
 
 }
-.banner  .banner-text {
+.banner .title {
 	text-align: center;
 	color: #ffffff;
 }
-.banner .banner-text .title {
+.banner .title .text {
 	font-family: 'Gotham-Pro', sans-serif;
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 900;
 
 }
-.banner .banner-text .text {
+.banner .title .description {
 	font-size: 18px;
     font-family: "Lato", sans-serif;
     line-height: 30px;
@@ -147,42 +147,39 @@ body {
 	left: 629px;
 }
 
-.digest {
+.digest-block {
 	padding-left: 825px;
 }
-.digest .digest-active {
-	border: 2px #1ca8dd solid;
-	border-radius: 100%;
-	padding: 5px;
-	display: inline-block;
-}
-.digest .digest-passive {
+.digest-block .digest {
 	border:2px #dedfe0 solid;
 	border-radius: 100%;
 	padding: 5px;
 	display: inline-block;
 }
+.digest-block .digest.-active {
+	border: 2px #1ca8dd solid;
+}
+
 .sentence-service {
 	padding: 90px 265px 0;
 }
 .sentence-service .title {
 	text-align: center;
 	padding-bottom: 95px;
+  color: #394b50;
 }
-.sentence-service .title .title-service {
+.sentence-service .title .text {
 	font-family: "Gotham-Black", sans-serif;
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: 900;
 	text-transform: uppercase;
-	color: #394b50;
 }
-.sentence-service .title .slang {
+.sentence-service .title .description {
 	font-family: "Lato",sans-serif;
 	font-size: 18px;
 	line-height: 22px;
 	padding-top: 9px;
-	color: #394b50;
 }
 .services-list {
 	display: flex;
@@ -195,27 +192,27 @@ body {
 	width: 50%;
 }
 .services-list .service-item .symbol {
-	float: left;
+	/* float: left; */
 	padding: 0 33px;
 }
 .services-list .service-item .description {
-	display: inline-block;
+	/* display: inline-block; */
 }
 .services-list .service-item .description .title {
 	display: inline;
-	text-align: left;
+	/* text-align: left; */
 	font-size: 22px;
-	line-height: 29px;
+	/* line-height: 29px; */
 	color: #394b50;
 	font-family: 'lato', sans-serif;
-	font-weight: 600;
+	font-weight: 800;
 	text-transform: uppercase;
 }
 .services-list .service-item .description .text {
 	font-size: 17px;
 	line-height: 29px;
 	font-family: "OpenSans", sans-serif;
-	display: inline-block;
+	/* display: inline-block; */
 	padding-top: 23px;
 }
 .description-organization {
@@ -223,10 +220,10 @@ body {
 	flex-direction: row;
 	padding-top: 72px;
 }
-.description-organization .background-foto {
+.description-organization .background-photo {
 	width: 50%;
-    background-image: url(../images/foto2.jpg);
-    background-repeat: no-repeat;
+  background-image: url(../images/foto2.jpg);
+  background-repeat: no-repeat;
 
 }
 .description-organization .description {
@@ -235,12 +232,12 @@ body {
 	display: block;
 	color: #ffffff;
 	flex: 1;
-	height: 296px;
+	/* height: 296px; */
 }
 .description-organization .description .title {
 	font-size: 30px;
 	font-family: "Gotham-Black", sans-serif;
-	font-weight: 900;
+	font-weight: 800;
 	line-height: 22px;
 	text-transform: uppercase;
 }
@@ -252,7 +249,6 @@ body {
 }
 .description-organization .description .continuation {
 		display: inline-block;
-
 }
 .description-organization .description .continuation .link {
 	color: #ffffff;
@@ -264,15 +260,15 @@ body {
 	padding: 16px 22px;
 	text-decoration: none;
 }
-.choice-price {
+.price-section {
 	padding: 136px 265px 163px;
 	background: #e7edf3;
 }
-.choice-price .section-name {
+.price-section > .title {
 	display: inline;
 	text-align: center;
 }
-.choice-price .section-name .title {
+.price-section > .title > .text {
 	font-family: "Gotham-Black", sans-serif;
 	font-size: 30px;
 	line-height: 22px;
@@ -280,13 +276,12 @@ body {
 	font-weight: 900;
 	text-transform: uppercase;
 }
-.choice-price .section-name .text {
+.price-section > .title > .description {
 	font-family:"Lato", sans-serif;
 	font-size: : 18px;
 	line-height: 22px;
 	color: #394b50;
 	padding-top: 9px;
-
 }
 .price-list {
     display: flex;
@@ -296,16 +291,14 @@ body {
 
 .price-item {
 	width: calc(100%/3);
-    background: #ffffff;
-    padding: 57px 35px 46px;
-    border-radius: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 30px solid #e7edf3;
+  background: #ffffff;
+  padding: 57px 35px 46px;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 30px solid #e7edf3;
 	border-top: 30px solid #e7edf3;
 	border-right: 1px solid #e7edf3;
-
-
 }
 .price-item:hover .title-plan .title,
 .price-item:hover .title-plan .price,
@@ -329,7 +322,7 @@ body {
 	font-size: 60px;
 	line-height: 22px;
 	color: #ffbb42;
-	font-weight: 600;
+	font-weight: 800;
 }
 .price-item .title-plan .limit {
 	font-family: "Lato", sans-serif;
@@ -339,29 +332,29 @@ body {
 	padding: 12px 0 33px;
 
 }
-.price-item .propose-term {
+.price-item .terms-block {
 	padding-bottom: 24px;
 }
-.price-item  .propose-term .term {
+.price-item  .terms-block .term {
 	border-top: 1px #e2e9f0 solid;
-    display: block;
-    color: #b5bbc1;
-    font-size: 13.5px;
-    line-height: 40px;
+  display: block;
+  color: #b5bbc1;
+  font-size: 13.5px;
+  line-height: 40px;
 }
- .price-item .get-continue {
+ .price-item .button {
 	display: inline-block;
 
 }
-.price-item  .get-continue .link {
-	background: #ffbb42;
-    border: none;
-    color: #ffffff;
-    font-size: 14px;
-    padding: 13px 20px;
-    background: #ffbb42;
-    border-radius: 5px;
-    text-decoration: none;
+.price-item  .button .link {
+	/* background: #ffbb42; */
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 13px 20px;
+  background: #ffbb42;
+  border-radius: 5px;
+  text-decoration: none;
 }
 .strategy-work  {
 	text-align: center;
@@ -400,60 +393,58 @@ body {
 	transform: rotate(180deg);
 } */
 
-.path-of-action {
+.strategy-work .steps {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding-top: 92px;
 	position: relative;
 }
-.path-of-action .arrow-first {
+.strategy-work .steps .arrow-first {
 	position: absolute;
 	left: 18%;
 	top: 15%;
 }
-.path-of-action .arrow-second {
+.strategy-work .steps .arrow-second {
 	position: absolute;
 	right: 18%;
 	top: 15%;
 }
-.path-of-action .arrow-inverted {
+.strategy-work .steps .arrow-inverted {
 	position: absolute;
 	transform: rotate(180deg);
 	left: 44%;
 	bottom: 45%;
 }
-.path-of-action .step-by-step {
+.strategy-work .steps .step {
 	margin-right: 80px;
-
 }
 
-.path-of-action .step-by-step:last-of-type {
+.strategy-work .steps .step:last-of-type {
 	margin-right: 0;
 }
-.path-of-action .step-by-step .description-step {
+.strategy-work .steps .step .description-step {
 	margin-top: 90px;
-
 }
-.path-of-action .step-by-step .description-step .title {
+.strategy-work .steps .step .description-step .title {
 	font-family: "Lato", sans-serif;
     font-size: 20px;
     line-height: 22px;
     color: #394b50;
     font-weight: 600;
 }
-.path-of-action .step-by-step .description-step .text {
+.strategy-work .steps .step .description-step .text {
 	font-family: "OpenSans", sans-serif;
 	font-size: 13px;
 	line-height: 22px;
 	color: #394b50;
 	padding-top: 30px;
 }
-.strategy-work .start-button {
+.strategy-work .button {
 	display: inline-block;
 	padding-top: 92px;
 }
-.strategy-work .start-button .link {
+.strategy-work .button .link {
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 17px 23px;
@@ -756,7 +747,7 @@ body {
 	font-size: 13px;
 	line-height: 24px;
 }
-.start-button {
+/* .start-button {
 	display: inline-block;
 	padding-top: 92px;
 }
@@ -766,4 +757,4 @@ body {
 	padding: 17px 23px;
 	color: #ffffff;
 	background: #e7ad48;
-}
+} */
